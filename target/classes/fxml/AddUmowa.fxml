@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firma.controllers.AddUmowaController">
+    <children>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="%add.umowa.title" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+        <Label text="%DB.data_zawarcia" />
+        <TextField fx:id="data_zawarciaTF" />
+      <Label text="%date.format" textFill="#802525" />
+      <Label text="%DB.data_konca" />
+        <TextField fx:id="data_koncaTF" />
+      <Label text="%date.format" textFill="#802525" />
+        <Label text="%DB.opis" />
+        <TextField fx:id="opisTF" />
+        <Label text="%DB.znizka_na_telefon" />
+        <TextField fx:id="znizka_na_telefonTF" />
+        <Label text="%DB.kara_za_zerwanie" />
+        <TextField fx:id="kara_za_zerwanieTF" />
+      <Label text="%DB.opcjonalny_telefon" />
+      <CheckBox fx:id="opcjonalny_telefonTF" mnemonicParsing="false" />
+      <Label text="%DB.id_centrala" />
+      <TextField fx:id="id_centralaTF" />
+      <Label text="%DB.id_pracownik" />
+      <TextField fx:id="id_pracownikTF" />
+      <Label text="%DB.id_klienta" />
+      <TextField fx:id="id_klientaTF" />
+      <Button fx:id="AddUmowaButton" mnemonicParsing="false" onAction="#AddUmowa" prefHeight="50.0" prefWidth="150.0" text="%Add.Umowa.Button">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Button>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

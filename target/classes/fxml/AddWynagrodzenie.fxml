@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firma.controllers.AddWynagrodzenieController">
+    <children>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="150.0" text="%add.wynagrodzenie.title" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+        <Label text="%DB.data_zaplaty" />
+        <TextField fx:id="data_zaplatyTF" />
+      <Label text="%date.format" textFill="#802525" />
+        <Label text="%DB.kwota_bazowa" />
+        <TextField fx:id="kwota_bazowa_TF" />
+        <Label text="%DB.przelicznik_etatu" />
+        <TextField fx:id="przelicznik_etatuTF" />
+        <Label text="%DB.przelicznik_stanowiska" />
+        <TextField fx:id="przelicznik_stanowiskaTF" />
+        <Label text="%DB.premia" />
+        <TextField fx:id="premiaTF" />
+        <Label text="%DB.id_pracownika">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="id_pracownikTF" />
+      <Button fx:id="AddWynagrodzenieButton" mnemonicParsing="false" onAction="#AddWynagrodzenie" prefHeight="50.0" prefWidth="150.0" text="%Add.Wynagrodzenie.Button">
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Button>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

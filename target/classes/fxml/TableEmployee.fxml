@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="firma.controllers.TableEmployeeController">
+   <children>
+      <Button fx:id="deletePracownikButton" mnemonicParsing="false" onAction="#deletePracownikButtonOnAction" prefHeight="50.0" prefWidth="150.0" text="%deletePracownikButton">
+         <VBox.margin>
+            <Insets bottom="10.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Button>
+      <ScrollPane>
+         <content>
+            <TableView fx:id="employeeTableViev" editable="true">
+               <columns>
+                  <TableColumn fx:id="id_pracownikColumn" onEditCommit="#onEditCommitId_pracownik" prefWidth="100.0" text="%DB.id_pracownik_tabelePracownik" />
+                  <TableColumn fx:id="imieColumn" onEditCommit="#onEditCommitImie" prefWidth="100.0" text="%DB.imie_tabelePracownik" />
+                  <TableColumn fx:id="nazwiskoColumn" onEditCommit="#onEditCommitNazwisko" prefWidth="100.0" text="%DB.naziwsko_tabelePracownik" />
+                  <TableColumn fx:id="stanowiskoColumn" onEditCommit="#onEditCommitStanowisko" prefWidth="100.0" text="%DB.stanowisko_tabelePracownik" />
+                  <TableColumn fx:id="plecColumn" onEditCommit="#onEditCommitPlec" prefWidth="50.0" text="%DB.Plec_tabelePracownik" />
+                  <TableColumn fx:id="peselColumn" onEditCommit="#onEditCommitPesel" prefWidth="75.0" text="%DB.pesel_tabelePracowni" />
+                  <TableColumn fx:id="data_zatrudnieniaColumn" onEditCommit="#onEditCommitData_zatrudnienia" prefWidth="100.0" text="%DB.data_zatrudnienia_tabelePracownik" />
+                  <TableColumn fx:id="data_urodzeniaColumn" onEditCommit="#onEditCommitData_urodzenia" prefWidth="100.0" text="%DB.Data_urodzenia__tabelePracownik" />
+                  <TableColumn fx:id="czy_pracuje_aktualnieColumn" onEditCommit="#onEditCommitCzy_pracuje_aktualnie" prefWidth="100.0" text="%DB.czy_pracuje_aktualnie_tabelePracownik" />
+                  <TableColumn fx:id="nr_kataColumn" onEditCommit="#onEditCommitNr_kata" prefWidth="100.0" text="%DB.nr_kata_tabelePracownik" />
+                  <TableColumn fx:id="nr_telefonuColumn" onEditCommit="#onEditCommitNr_telefonu" prefWidth="100.0" text="%DB.nr_telefonu_tabelePracownik" />
+                  <TableColumn fx:id="emialColumn" onEditStart="#onEditCommitEmial" prefWidth="100.0" text="%DB.eamil_tabelePracownik" />
+                  <TableColumn fx:id="id_centralaColumn" onEditCommit="#onEditCommitId_centrala" prefWidth="100.0" text="%DB.id_centrala_tabelePracownik" />
+                  <TableColumn fx:id="id_placowka_sprzedarzyColumn" onEditCommit="#onEditCommitId_placowak_sprzedarzy" prefWidth="100.0" text="%DB.id_placowka_sprzedarzy_tabelePracownik" />
+                  <TableColumn fx:id="id_placowka_naprawczaColumn" onEditCommit="#onEditCommitId_placowka_naprawcza" prefWidth="100.0" text="%DB.id_placowka_naprawcza_tabelePracownik" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>
